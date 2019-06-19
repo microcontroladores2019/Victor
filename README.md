@@ -9,11 +9,11 @@ entre o fFlmengo e Botafogo, já que por experiência própria é muito fácil p
 
 # Diagrama de Blocos 
 
-![alt text](https://github.com/ime-elo2020/Victor_I2C_USB_SPI_FreeRTOS_Projeto/blob/master/Diagrama_de_Blocos_Eletronica.PNG)
+![alt text](https://github.com/microcontroladores2019/Victor/blob/master/Diagrama_de_Blocos_Eletronica.PNG)
 
 # Pinagem
 
-![alt text](https://github.com/ime-elo2020/Victor_I2C_USB_SPI_FreeRTOS_Projeto/blob/master/Pinagem.PNG)
+![alt text](https://github.com/microcontroladores2019/Victor/blob/master/Pinagem.PNG)
 
 # Configuração dos Periféricos
 
@@ -72,32 +72,53 @@ ACCESS(SPI1_CR1) |= (1 << 6); Habilita SPI
 
 ACCESS(GPIOE_BSRR) |= (1 << 3); Seta CS em 1
 
-#Fluxograma
+# Fluxograma
 
-![alt text](https://github.com/ime-elo2020/Victor_I2C_USB_SPI_FreeRTOS_Projeto/blob/master/Pinagem.PNG)
+![alt text](https://github.com/microcontroladores2019/Victor/blob/master/Fluxograma.PNG)
 
 # Documentação das Funções e Variáveis
 
 Função
 
 GyroInit() 
+
 Inicializa o Giroscópio
 
 AccelerometerInit()
+
 Inicializa o Acelerômetro
 
 GetGyroValues(&gyroX, &gyroY, &gyroZ)
+
 Função que adquiri os valores do giroscópio para cada eixo
 
 GetAccelerometerValues(&accelX, &accelY, &accelZ)
+
 Função que adquiri os valores do acelerômetro para cada eixo
 
 Variável
 
-int Counter0 = 0; Salvar quantas estações percorreu
-int N; Número de estações
-int Counter1 = 0; Contar o tempo
-short accelX, accelY, accelZ; Valores do Acelerômetro
-short gyroX, gyroY, gyroZ; Valores do Giroscópio 
-short G = accelZ; Valor da aceleração da gravidade
+int Counter0 = 0; 
+
+Salvar quantas estações percorreu
+
+int N;
+
+Número de estações
+
+int Counter1 = 0; 
+
+Contar o tempo
+
+short accelX, accelY, accelZ;
+
+Valores do Acelerômetro
+
+short gyroX, gyroY, gyroZ;
+
+Valores do Giroscópio
+
+short G = accelZ; 
+
+Valor da aceleração da gravidade
 
